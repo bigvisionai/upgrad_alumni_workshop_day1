@@ -230,8 +230,10 @@ def getLandmarks(faceDetectorNet, landmarkDetector, img, confidence_threshold = 
   faces = np.array(faces)
 
   retval, landmarks = landmarkDetector.fit(img, faces)
+  for landmark in landmarks:
+    cv2.face.drawFacemarks(imgWithLandmarks,landmark)
 
-  return landmarks[0][0]
+  return landmarks[0][0], imgWithLandmarks
 
 # Warps an image in a piecewise affine manner.
 # The warp is defined by the movement of landmark points specified by pointsIn
