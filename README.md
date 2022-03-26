@@ -1,6 +1,8 @@
-# upgrad_alumni_workshop_day1
+# Advanced Computer Vision Workshop 
 
-Open in Google Colab
+Date: March 26, 2022
+
+## Colab Links
 
 1. [OpenCV Basics](https://colab.research.google.com/github/bigvisionai/upgrad_alumni_workshop_day1/blob/main/OpenCV_Basics/OpenCV_Basics.ipynb#scrollTo=yZ025QNlZNRa)
 
