@@ -208,6 +208,8 @@ def warpTriangle(img1, img2, t1, t2):
 
 # detect facial landmarks in image
 def getLandmarks(faceDetectorNet, landmarkDetector, img, confidence_threshold = 0.75):
+  imgWithLandmarks = img.copy()
+
   img_height = img.shape[0]
   img_width = img.shape[1]
   faces = []
